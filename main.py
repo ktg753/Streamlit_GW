@@ -4,7 +4,7 @@ import streamlit as st
 st.title("어떤 종류의 지원을 받고 싶나요?")
 
 # 기본값을 None으로 설정하여 자동 선택을 방지
-support_type = st.radio("지원 유형 선택", ["CAT Tool", "서버/네트워크/Windows", "MS365", "기타", "테스트"], index=None)
+support_type = st.radio("지원 유형 선택", ["CAT Tool", "서버/네트워크/Windows", "MS365", "기타"], index=None)
 
 # 사용자가 'CAT tool'을 선택한 경우에만 관련 목록 표시
 if support_type == "CAT Tool":
